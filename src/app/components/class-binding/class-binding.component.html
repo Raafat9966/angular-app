@@ -1,0 +1,10 @@
+<h2>
+  Welcome {{name}}
+</h2>
+
+<h2 class="text-success">Codevolution</h2>
+<h2 [class]="successClass">Codevolution</h2>
+<h2 class="text-special" [class]="successClass">Codevolution</h2> <!--you can use class binding with [class] but not with class attribute-->
+<h2 [class.text-danger]="hasError">Codevolution</h2>
+<h2 [ngClass]="messageClasses">Codevolution</h2>
+

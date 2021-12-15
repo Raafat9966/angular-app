@@ -1,0 +1,16 @@
+<h3 *ngIf="display; else template">ngIf-directive works!</h3>
+<ng-template #template>
+  <h3>ngElse-directive works!</h3>
+</ng-template>
+
+<div *ngIf="display; then ifBlock; else elseBlock"></div>
+
+
+<ng-template #ifBlock>
+  <h3>ngIf-directive works!</h3>
+</ng-template>
+<ng-template #elseBlock>
+  <h3>ngElse-directive works!</h3>
+</ng-template>
+
+

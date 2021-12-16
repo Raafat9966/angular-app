@@ -11,6 +11,8 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { TemplateReferenceVarComponent } from './components/template-reference-var/template-reference-var.component';
 import { WaysToBindingComponent } from './components/ways-to-binding/ways-to-binding.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
+import { ComponentInteractionComponent } from './components/component-interaction/component-interaction.component';
+import { ChildComponentComponent } from './components/component-interaction/child-component/child-component.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directi
     EventBindingComponent,
     TemplateReferenceVarComponent,
     WaysToBindingComponent,
-    NgifDirectiveComponent
+    NgifDirectiveComponent,
+    ComponentInteractionComponent,
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,

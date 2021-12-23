@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { WaysToBindingComponent } from './components/ways-to-binding/ways-to-bin
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { ComponentInteractionComponent } from './components/component-interaction/component-interaction.component';
 import { ChildComponentComponent } from './components/component-interaction/child-component/child-component.component';
-
+import { NgxSpinnerModule } from 'ngx-spinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +27,16 @@ import { ChildComponentComponent } from './components/component-interaction/chil
     WaysToBindingComponent,
     NgifDirectiveComponent,
     ComponentInteractionComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
